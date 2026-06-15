@@ -2,607 +2,628 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kushal Iyengar's Cake Mane – Freshly Baked Happiness Every Day | Bashettihalli, Bengaluru</title>
-  <meta name="description" content="Kushal Iyengar's Cake Mane in Bashettihalli, Bengaluru – Freshly baked cakes, authentic Iyengar bakery snacks, birthday cakes, and more. Budget friendly, quality taste. Call +91 78993 07440." />
-  <meta name="keywords" content="Iyengar bakery, Bashettihalli bakery, Bengaluru cake shop, birthday cakes, fresh baked goods, veg puffs, honey cake, dil pasand" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#6B3E26" />
+  <title>Kushal Iyengar's Cake Mane – Freshly Baked Happiness | Bashettihalli, Bengaluru</title>
+  <meta name="description" content="Kushal Iyengar's Cake Mane – Premium Iyengar bakery in Bashettihalli, Bengaluru. Freshly baked cakes, veg puffs, dil pasand & more. Budget friendly. Call +91 78993 07440." />
+  <meta name="keywords" content="Iyengar bakery Bengaluru, cake shop Bashettihalli, birthday cake order, veg puffs, honey cake, dil pasand, khara bun" />
   <meta property="og:title" content="Kushal Iyengar's Cake Mane – Premium Bakery in Bengaluru" />
-  <meta property="og:description" content="Freshly baked cakes, snacks and Iyengar bakery favorites at budget-friendly prices." />
+  <meta property="og:description" content="Freshly baked cakes, snacks and Iyengar bakery favorites at budget-friendly prices. Rated 4.8⭐" />
+  <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
+  <!-- Preload hero image for LCP -->
+  <link rel="preload" as="image" href="hero_bakery.png" />
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <div class="nav-logo">
-        <span class="logo-icon">🎂</span>
+  <!-- ══════════════ TOP NAVIGATION ══════════════ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Kushal Iyengar's Cake Mane home">
+        <span class="logo-emoji" aria-hidden="true">🎂</span>
         <div class="logo-text">
-          <span class="logo-main">Kushal Iyengar's</span>
+          <span class="logo-name">Kushal Iyengar's</span>
           <span class="logo-sub">Cake Mane</span>
         </div>
-      </div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#features" class="nav-link">Features</a></li>
-        <li><a href="#bestsellers" class="nav-link">Our Menu</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#reviews" class="nav-link">Reviews</a></li>
-        <li><a href="#gallery" class="nav-link">Gallery</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <a href="tel:+917899307440" class="nav-cta" id="navCtaBtn">
-        <span>📞</span> Order Now
       </a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-right">
+        <a href="tel:+917899307440" class="nav-call-chip" aria-label="Call us now">
+          <span aria-hidden="true">📞</span> Call
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Slide-Down Menu -->
+    <div class="mobile-menu" id="mobileMenu" role="menu" aria-hidden="true">
+      <a href="#home"        class="mm-link" role="menuitem">🏠 Home</a>
+      <a href="#features"    class="mm-link" role="menuitem">✨ Why Us</a>
+      <a href="#bestsellers" class="mm-link" role="menuitem">🍰 Our Menu</a>
+      <a href="#about"       class="mm-link" role="menuitem">🏡 About</a>
+      <a href="#reviews"     class="mm-link" role="menuitem">⭐ Reviews</a>
+      <a href="#gallery"     class="mm-link" role="menuitem">📸 Gallery</a>
+      <a href="#contact"     class="mm-link" role="menuitem">📍 Contact</a>
+      <a href="tel:+917899307440" class="mm-cta" role="menuitem">📞 Call Now — +91 78993 07440</a>
     </div>
   </nav>
 
-  <!-- ═══════════════════ HERO SECTION ═══════════════════ -->
-  <section class="hero" id="home">
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero" id="home" aria-label="Welcome banner">
+    <!-- Skeleton shown until image loads -->
+    <div class="hero-skeleton" id="heroSkeleton" aria-hidden="true"></div>
     <div class="hero-bg">
-      <img src="hero_bakery.png" alt="Fresh bakery display with cakes and pastries" class="hero-img" />
-      <div class="hero-overlay"></div>
+      <img
+        src="hero_bakery.png"
+        alt="Freshly baked cakes and pastries display at Kushal Iyengar's Cake Mane"
+        class="hero-img"
+        id="heroImg"
+        fetchpriority="high"
+      />
+      <div class="hero-overlay" aria-hidden="true"></div>
     </div>
-    <div class="hero-content reveal">
-      <div class="hero-badge">
-        <span>⭐ 4.8/5</span> &nbsp;•&nbsp; Trusted by Hundreds of Happy Customers
-      </div>
+
+    <div class="hero-card fade-up">
+      <div class="hero-badge" aria-label="Rating: 4.8 out of 5">⭐ 4.8/5 &nbsp;·&nbsp; Trusted Bakery</div>
       <h1 class="hero-title">
-        Freshly Baked<br />
-        <em>Happiness</em> Every<br />
-        Single Day.
+        Freshly Baked<br /><em>Happiness</em><br />Every Day.
       </h1>
-      <p class="hero-subtitle">
-        From delicious cakes to authentic Iyengar bakery favorites,<br />
-        enjoy quality and taste at affordable prices.
+      <p class="hero-desc">
+        Authentic Iyengar bakery favorites — cakes, puffs, buns &amp; more — at prices everyone loves.
       </p>
-      <p class="hero-tagline">
-        🥐 Freshly Baked Every Day &nbsp;•&nbsp; 🍰 Authentic Taste &nbsp;•&nbsp; 💰 Budget Friendly
-      </p>
-      <div class="hero-buttons">
-        <a href="tel:+917899307440" class="btn btn-primary" id="heroOrderBtn">
-          <span>🛒</span> Order Now
+      <div class="hero-actions">
+        <a href="tel:+917899307440" class="hbtn hbtn-primary" id="heroOrderBtn" aria-label="Order now by calling us">
+          🛒 Order Now
         </a>
-        <a href="#contact" class="btn btn-secondary" id="heroVisitBtn">
-          <span>📍</span> Visit Store
+        <a href="tel:+917899307440" class="hbtn hbtn-outline" id="heroCallBtn" aria-label="Call us now">
+          📞 Call Now
         </a>
       </div>
+      <p class="hero-chips" aria-label="Key features">
+        <span>🥐 Daily Fresh</span>
+        <span>🍰 Authentic</span>
+        <span>💰 Budget Friendly</span>
+      </p>
     </div>
-    <div class="hero-scroll-indicator">
-      <div class="scroll-dot"></div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-pill"></div>
     </div>
   </section>
 
-  <!-- ═══════════════════ STATS BANNER ═══════════════════ -->
-  <section class="stats-banner">
-    <div class="stats-container">
-      <div class="stat-item reveal">
-        <span class="stat-number">500+</span>
-        <span class="stat-label">Happy Customers</span>
+  <!-- ══════════════ STATS STRIP ══════════════ -->
+  <section class="stats-strip" aria-label="Our achievements">
+    <div class="stats-inner">
+      <div class="stat fade-up">
+        <strong class="stat-num" data-target="500" data-suffix="+">500+</strong>
+        <span class="stat-lbl">Happy Customers</span>
       </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item reveal">
-        <span class="stat-number">4.8⭐</span>
-        <span class="stat-label">Average Rating</span>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat fade-up">
+        <strong class="stat-num">4.8⭐</strong>
+        <span class="stat-lbl">Avg Rating</span>
       </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item reveal">
-        <span class="stat-number">Daily</span>
-        <span class="stat-label">Fresh Bakes</span>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat fade-up">
+        <strong class="stat-num">Daily</strong>
+        <span class="stat-lbl">Fresh Bakes</span>
       </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item reveal">
-        <span class="stat-number">100%</span>
-        <span class="stat-label">Quality Ingredients</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════ FEATURES SECTION ═══════════════════ -->
-  <section class="features" id="features">
-    <div class="section-container">
-      <div class="section-header reveal">
-        <span class="section-tag">Why Choose Us</span>
-        <h2 class="section-title">The Cake Mane Promise</h2>
-        <p class="section-subtitle">Every item we bake carries our commitment to freshness, taste, and affordability.</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card reveal" id="feat1">
-          <div class="feature-icon">🍰</div>
-          <h3 class="feature-title">Fresh Cakes</h3>
-          <p class="feature-desc">Handcrafted cakes baked fresh every morning with premium ingredients and love.</p>
-        </div>
-        <div class="feature-card reveal" id="feat2">
-          <div class="feature-icon">🥐</div>
-          <h3 class="feature-title">Daily Baked Snacks</h3>
-          <p class="feature-desc">Crispy puffs, soft buns, and savory treats freshly baked and ready every day.</p>
-        </div>
-        <div class="feature-card reveal" id="feat3">
-          <div class="feature-icon">🎂</div>
-          <h3 class="feature-title">Birthday & Custom Orders</h3>
-          <p class="feature-desc">Make every celebration special with our custom cakes tailored to your wishes.</p>
-        </div>
-        <div class="feature-card reveal" id="feat4">
-          <div class="feature-icon">💰</div>
-          <h3 class="feature-title">Budget Friendly Prices</h3>
-          <p class="feature-desc">Premium taste at pocket-friendly prices — quality that doesn't break the bank.</p>
-        </div>
-        <div class="feature-card reveal" id="feat5">
-          <div class="feature-icon">❤️</div>
-          <h3 class="feature-title">Quality Ingredients</h3>
-          <p class="feature-desc">Only the finest ingredients go into every bake — no compromises, ever.</p>
-        </div>
-        <div class="feature-card reveal" id="feat6">
-          <div class="feature-icon">🚚</div>
-          <h3 class="feature-title">Quick Local Service</h3>
-          <p class="feature-desc">Serving Bashettihalli and surrounding neighborhoods with speedy, reliable service.</p>
-        </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat fade-up">
+        <strong class="stat-num" data-target="100" data-suffix="%">100%</strong>
+        <span class="stat-lbl">Quality</span>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════ BEST SELLERS ═══════════════════ -->
-  <section class="bestsellers" id="bestsellers">
-    <div class="section-container">
-      <div class="section-header reveal">
-        <span class="section-tag">Our Specialties</span>
-        <h2 class="section-title">Customer Favourites</h2>
-        <p class="section-subtitle">The most loved items from our bakery, freshly baked and waiting for you.</p>
-      </div>
-      <div class="products-grid">
+  <!-- ══════════════ FEATURES ══════════════ -->
+  <section class="features" id="features" aria-label="Our features">
+    <div class="wrap">
+      <header class="sec-header fade-up">
+        <span class="sec-tag">Why Choose Us</span>
+        <h2 class="sec-title">The Cake Mane Promise</h2>
+        <p class="sec-sub">Every item we bake carries our commitment to freshness, taste &amp; affordability.</p>
+      </header>
 
-        <div class="product-card reveal" id="prod1">
-          <div class="product-img-wrap">
-            <img src="cake_chocolate.png" alt="Chocolate Cake" class="product-img" loading="lazy" />
-            <span class="product-badge">Best Seller</span>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Chocolate Cake</h3>
-            <p class="product-desc">Rich, velvety chocolate layers with silky ganache frosting.</p>
-            <div class="product-footer">
-              <span class="product-price">Starting ₹350</span>
-              <a href="tel:+917899307440" class="product-btn" id="orderChocolate">Order Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card reveal" id="prod2">
-          <div class="product-img-wrap">
-            <img src="cake_blackforest.png" alt="Black Forest Cake" class="product-img" loading="lazy" />
-            <span class="product-badge">Popular</span>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Black Forest Cake</h3>
-            <p class="product-desc">Classic cherries, cream, and dark chocolate — a timeless delight.</p>
-            <div class="product-footer">
-              <span class="product-price">Starting ₹380</span>
-              <a href="tel:+917899307440" class="product-btn" id="orderBlackForest">Order Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card reveal" id="prod3">
-          <div class="product-img-wrap">
-            <img src="cake_whiteforest.png" alt="White Forest Cake" class="product-img" loading="lazy" />
-            <span class="product-badge">New</span>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">White Forest Cake</h3>
-            <p class="product-desc">Vanilla sponge with white chocolate curls and fresh cream.</p>
-            <div class="product-footer">
-              <span class="product-price">Starting ₹370</span>
-              <a href="tel:+917899307440" class="product-btn" id="orderWhiteForest">Order Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card reveal" id="prod4">
-          <div class="product-img-wrap">
-            <img src="veg_puff.png" alt="Veg Puffs" class="product-img" loading="lazy" />
-            <span class="product-badge">Daily Fresh</span>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Veg Puffs</h3>
-            <p class="product-desc">Golden, flaky pastry with a spiced vegetable filling inside.</p>
-            <div class="product-footer">
-              <span class="product-price">Starting ₹20</span>
-              <a href="tel:+917899307440" class="product-btn" id="orderVegPuff">Order Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card reveal" id="prod5">
-          <div class="product-img-wrap">
-            <img src="dil_pasand.png" alt="Dil Pasand" class="product-img" loading="lazy" />
-            <span class="product-badge">Iyengar Special</span>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Dil Pasand</h3>
-            <p class="product-desc">Sweet coconut-filled pastry — an authentic Iyengar bakery classic.</p>
-            <div class="product-footer">
-              <span class="product-price">Starting ₹30</span>
-              <a href="tel:+917899307440" class="product-btn" id="orderDilPasand">Order Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card reveal" id="prod6">
-          <div class="product-img-wrap">
-            <img src="honey_cake.png" alt="Honey Cake" class="product-img" loading="lazy" />
-            <span class="product-badge">Staff Pick</span>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Honey Cake</h3>
-            <p class="product-desc">Golden amber sponge drizzled with real honey — irresistibly sweet.</p>
-            <div class="product-footer">
-              <span class="product-price">Starting ₹280</span>
-              <a href="tel:+917899307440" class="product-btn" id="orderHoneyCake">Order Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card reveal" id="prod7">
-          <div class="product-img-wrap">
-            <img src="khara_bun.png" alt="Khara Bun" class="product-img" loading="lazy" />
-            <span class="product-badge">Morning Favorite</span>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Khara Bun</h3>
-            <p class="product-desc">Soft, spiced savory bun — the perfect companion for your morning tea.</p>
-            <div class="product-footer">
-              <span class="product-price">Starting ₹15</span>
-              <a href="tel:+917899307440" class="product-btn" id="orderKharaBun">Order Now</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card reveal" id="prod8">
-          <div class="product-img-wrap">
-            <img src="cookies_assorted.png" alt="Cookies" class="product-img" loading="lazy" />
-            <span class="product-badge">Crunchy & Fresh</span>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Assorted Cookies</h3>
-            <p class="product-desc">Butter, choco-chip, and sugar cookies baked to golden perfection.</p>
-            <div class="product-footer">
-              <span class="product-price">Starting ₹120</span>
-              <a href="tel:+917899307440" class="product-btn" id="orderCookies">Order Now</a>
-            </div>
-          </div>
-        </div>
-
+      <div class="feat-grid">
+        <article class="feat-card fade-up" id="feat1">
+          <div class="feat-icon" aria-hidden="true">🍰</div>
+          <h3 class="feat-title">Fresh Cakes</h3>
+          <p class="feat-desc">Handcrafted daily with premium ingredients and love.</p>
+        </article>
+        <article class="feat-card fade-up" id="feat2">
+          <div class="feat-icon" aria-hidden="true">🥐</div>
+          <h3 class="feat-title">Daily Baked Snacks</h3>
+          <p class="feat-desc">Crispy puffs, soft buns — ready fresh every morning.</p>
+        </article>
+        <article class="feat-card fade-up" id="feat3">
+          <div class="feat-icon" aria-hidden="true">🎂</div>
+          <h3 class="feat-title">Custom Orders</h3>
+          <p class="feat-desc">Birthday cakes made exactly the way you want them.</p>
+        </article>
+        <article class="feat-card fade-up" id="feat4">
+          <div class="feat-icon" aria-hidden="true">💰</div>
+          <h3 class="feat-title">Budget Friendly</h3>
+          <p class="feat-desc">Premium taste at prices that don't break the bank.</p>
+        </article>
+        <article class="feat-card fade-up" id="feat5">
+          <div class="feat-icon" aria-hidden="true">❤️</div>
+          <h3 class="feat-title">Quality Ingredients</h3>
+          <p class="feat-desc">Only the finest ingredients — no compromises, ever.</p>
+        </article>
+        <article class="feat-card fade-up" id="feat6">
+          <div class="feat-icon" aria-hidden="true">🚚</div>
+          <h3 class="feat-title">Local Service</h3>
+          <p class="feat-desc">Proudly serving Bashettihalli &amp; surroundings.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════ ABOUT SECTION ═══════════════════ -->
-  <section class="about" id="about">
-    <div class="section-container">
+  <!-- ══════════════ BEST SELLERS ══════════════ -->
+  <section class="bestsellers" id="bestsellers" aria-label="Our best selling products">
+    <div class="wrap">
+      <header class="sec-header fade-up">
+        <span class="sec-tag">Our Specialties</span>
+        <h2 class="sec-title">Customer Favourites</h2>
+        <p class="sec-sub">The most loved items from our bakery, fresh every day.</p>
+      </header>
+
+      <!-- Swipe hint (mobile only) -->
+      <p class="swipe-hint" aria-hidden="true">← Swipe to explore →</p>
+
+      <!-- Horizontal swipeable row (mobile) / grid (desktop) -->
+      <div class="products-scroll-wrap" role="list" aria-label="Product list">
+        <div class="products-track" id="productsTrack">
+
+          <article class="prod-card fade-up" id="prod1" role="listitem">
+            <!-- Skeleton placeholder -->
+            <div class="img-skeleton" aria-hidden="true"></div>
+            <div class="prod-img-wrap">
+              <img src="cake_chocolate.png" alt="Chocolate Cake" class="prod-img" loading="lazy" width="300" height="200" />
+              <span class="prod-badge">Best Seller</span>
+            </div>
+            <div class="prod-body">
+              <h3 class="prod-name">Chocolate Cake</h3>
+              <p class="prod-price">From ₹350</p>
+              <a href="tel:+917899307440" class="prod-btn" id="orderChocolate" aria-label="Order Chocolate Cake">Order Now</a>
+            </div>
+          </article>
+
+          <article class="prod-card fade-up" id="prod2" role="listitem">
+            <div class="img-skeleton" aria-hidden="true"></div>
+            <div class="prod-img-wrap">
+              <img src="cake_blackforest.png" alt="Black Forest Cake" class="prod-img" loading="lazy" width="300" height="200" />
+              <span class="prod-badge">Popular</span>
+            </div>
+            <div class="prod-body">
+              <h3 class="prod-name">Black Forest</h3>
+              <p class="prod-price">From ₹380</p>
+              <a href="tel:+917899307440" class="prod-btn" id="orderBlackForest" aria-label="Order Black Forest Cake">Order Now</a>
+            </div>
+          </article>
+
+          <article class="prod-card fade-up" id="prod3" role="listitem">
+            <div class="img-skeleton" aria-hidden="true"></div>
+            <div class="prod-img-wrap">
+              <img src="cake_whiteforest.png" alt="White Forest Cake" class="prod-img" loading="lazy" width="300" height="200" />
+              <span class="prod-badge">New</span>
+            </div>
+            <div class="prod-body">
+              <h3 class="prod-name">White Forest</h3>
+              <p class="prod-price">From ₹370</p>
+              <a href="tel:+917899307440" class="prod-btn" id="orderWhiteForest" aria-label="Order White Forest Cake">Order Now</a>
+            </div>
+          </article>
+
+          <article class="prod-card fade-up" id="prod4" role="listitem">
+            <div class="img-skeleton" aria-hidden="true"></div>
+            <div class="prod-img-wrap">
+              <img src="veg_puff.png" alt="Veg Puffs" class="prod-img" loading="lazy" width="300" height="200" />
+              <span class="prod-badge">Daily Fresh</span>
+            </div>
+            <div class="prod-body">
+              <h3 class="prod-name">Veg Puffs</h3>
+              <p class="prod-price">From ₹20</p>
+              <a href="tel:+917899307440" class="prod-btn" id="orderVegPuff" aria-label="Order Veg Puffs">Order Now</a>
+            </div>
+          </article>
+
+          <article class="prod-card fade-up" id="prod5" role="listitem">
+            <div class="img-skeleton" aria-hidden="true"></div>
+            <div class="prod-img-wrap">
+              <img src="dil_pasand.png" alt="Dil Pasand" class="prod-img" loading="lazy" width="300" height="200" />
+              <span class="prod-badge">Iyengar Special</span>
+            </div>
+            <div class="prod-body">
+              <h3 class="prod-name">Dil Pasand</h3>
+              <p class="prod-price">From ₹30</p>
+              <a href="tel:+917899307440" class="prod-btn" id="orderDilPasand" aria-label="Order Dil Pasand">Order Now</a>
+            </div>
+          </article>
+
+          <article class="prod-card fade-up" id="prod6" role="listitem">
+            <div class="img-skeleton" aria-hidden="true"></div>
+            <div class="prod-img-wrap">
+              <img src="honey_cake.png" alt="Honey Cake" class="prod-img" loading="lazy" width="300" height="200" />
+              <span class="prod-badge">Staff Pick</span>
+            </div>
+            <div class="prod-body">
+              <h3 class="prod-name">Honey Cake</h3>
+              <p class="prod-price">From ₹280</p>
+              <a href="tel:+917899307440" class="prod-btn" id="orderHoneyCake" aria-label="Order Honey Cake">Order Now</a>
+            </div>
+          </article>
+
+          <article class="prod-card fade-up" id="prod7" role="listitem">
+            <div class="img-skeleton" aria-hidden="true"></div>
+            <div class="prod-img-wrap">
+              <img src="khara_bun.png" alt="Khara Bun" class="prod-img" loading="lazy" width="300" height="200" />
+              <span class="prod-badge">Morning Fav</span>
+            </div>
+            <div class="prod-body">
+              <h3 class="prod-name">Khara Bun</h3>
+              <p class="prod-price">From ₹15</p>
+              <a href="tel:+917899307440" class="prod-btn" id="orderKharaBun" aria-label="Order Khara Bun">Order Now</a>
+            </div>
+          </article>
+
+          <article class="prod-card fade-up" id="prod8" role="listitem">
+            <div class="img-skeleton" aria-hidden="true"></div>
+            <div class="prod-img-wrap">
+              <img src="cookies_assorted.png" alt="Assorted Cookies" class="prod-img" loading="lazy" width="300" height="200" />
+              <span class="prod-badge">Crunchy &amp; Fresh</span>
+            </div>
+            <div class="prod-body">
+              <h3 class="prod-name">Cookies</h3>
+              <p class="prod-price">From ₹120</p>
+              <a href="tel:+917899307440" class="prod-btn" id="orderCookies" aria-label="Order Cookies">Order Now</a>
+            </div>
+          </article>
+
+        </div><!-- /products-track -->
+      </div><!-- /products-scroll-wrap -->
+    </div>
+  </section>
+
+  <!-- ══════════════ ABOUT ══════════════ -->
+  <section class="about" id="about" aria-label="About us">
+    <div class="wrap">
       <div class="about-grid">
-        <div class="about-image-wrap reveal">
-          <img src="about_bakery.png" alt="Inside Kushal Iyengar's Cake Mane bakery" class="about-img" loading="lazy" />
-          <div class="about-float-badge">
-            <span class="float-number">4.8⭐</span>
-            <span class="float-label">Customer Rating</span>
+        <div class="about-img-wrap fade-up">
+          <img src="about_bakery.png" alt="Inside Kushal Iyengar's Cake Mane – warm and welcoming bakery" class="about-img" loading="lazy" width="600" height="500" />
+          <div class="about-float-badge" aria-label="4.8 star customer rating">
+            <span class="float-num">4.8⭐</span>
+            <span class="float-lbl">Customer Rating</span>
           </div>
         </div>
-        <div class="about-content reveal">
-          <span class="section-tag">Our Story</span>
-          <h2 class="section-title" style="text-align:left; margin-bottom: 1.2rem;">A Neighborhood Bakery<br /><em>Built on Trust & Taste</em></h2>
-          <p class="about-text">
-            Kushal Iyengar's Cake Mane is a trusted neighborhood bakery in Bashettihalli, Bengaluru,
-            serving freshly baked cakes, snacks, and authentic Iyengar bakery specialties. Known for
-            quality, affordability, and delicious taste, we bring smiles to every celebration and warmth
-            to every morning.
+        <div class="about-content fade-up">
+          <span class="sec-tag">Our Story</span>
+          <h2 class="sec-title about-title">A Bakery Built on<br /><em>Trust &amp; Taste</em></h2>
+          <p class="about-para">
+            Kushal Iyengar's Cake Mane is a beloved neighborhood bakery in Bashettihalli, Bengaluru, serving freshly baked cakes, snacks, and authentic Iyengar bakery specialties. Known for quality, affordability, and incredible taste — we bring smiles to every celebration.
           </p>
-          <p class="about-text">
-            Every item on our shelves is baked fresh daily using quality ingredients. Whether it's
-            a birthday cake, a box of puffs for the office, or a sweet khara bun with morning chai
-            — we're here for every moment that matters.
-          </p>
-          <div class="about-pillars">
-            <div class="pillar">
-              <span class="pillar-icon">🌿</span>
-              <span class="pillar-text">Fresh Daily</span>
-            </div>
-            <div class="pillar">
-              <span class="pillar-icon">🏡</span>
-              <span class="pillar-text">Local & Trusted</span>
-            </div>
-            <div class="pillar">
-              <span class="pillar-icon">💛</span>
-              <span class="pillar-text">Made with Love</span>
-            </div>
+          <div class="about-pills">
+            <span class="pill">🌿 Fresh Daily</span>
+            <span class="pill">🏡 Local &amp; Trusted</span>
+            <span class="pill">💛 Made with Love</span>
           </div>
-          <a href="tel:+917899307440" class="btn btn-primary" id="aboutCallBtn">
-            <span>📞</span> Call to Order
+          <a href="tel:+917899307440" class="action-btn action-btn--gold" id="aboutCallBtn" aria-label="Call to place an order">
+            📞 Call to Order
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════ REVIEWS SECTION ═══════════════════ -->
-  <section class="reviews" id="reviews">
-    <div class="section-container">
-      <div class="section-header reveal">
-        <span class="section-tag">Testimonials</span>
-        <h2 class="section-title">What Our Customers Say</h2>
-        <p class="section-subtitle">Hear from the people who love us the most.</p>
-      </div>
-      <div class="reviews-carousel">
-        <div class="reviews-track" id="reviewsTrack">
+  <!-- ══════════════ REVIEWS ══════════════ -->
+  <section class="reviews" id="reviews" aria-label="Customer reviews">
+    <div class="wrap">
+      <header class="sec-header fade-up">
+        <span class="sec-tag" style="background:rgba(212,160,23,.2);color:#F0C040;border:1px solid rgba(212,160,23,.4);">Testimonials</span>
+        <h2 class="sec-title" style="color:#fff;">What Customers Say</h2>
+        <p class="sec-sub" style="color:rgba(255,248,240,.65);">Hear from the people who love us most.</p>
+      </header>
 
-          <div class="review-card" id="rev1">
-            <div class="review-stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"The food is really good and budget friendly. I love their puffs and cakes — every single item is fresh and delicious!"</p>
-            <div class="review-author">
-              <div class="author-avatar">V</div>
-              <div class="author-info">
-                <span class="author-name">Vallabha BJ</span>
-                <span class="author-sub">Local Customer • Bengaluru</span>
+      <div class="rv-carousel" aria-live="polite">
+        <div class="rv-track" id="rvTrack">
+
+          <article class="rv-card" id="rev1" aria-label="Review by Vallabha BJ">
+            <div class="rv-stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+            <blockquote class="rv-text">"The food is really good and budget friendly. I love their puffs and cakes — every item is fresh and delicious!"</blockquote>
+            <div class="rv-author">
+              <div class="rv-avatar" aria-hidden="true">V</div>
+              <div>
+                <strong class="rv-name">Vallabha BJ</strong>
+                <span class="rv-loc">Local Customer · Bengaluru</span>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="review-card" id="rev2">
-            <div class="review-stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"Very nice experience. Great taste and affordable prices. Best Iyengar bakery in Bashettihalli — highly recommended!"</p>
-            <div class="review-author">
-              <div class="author-avatar">T</div>
-              <div class="author-info">
-                <span class="author-name">Tejas Gowda B R</span>
-                <span class="author-sub">Regular Customer • Bengaluru</span>
+          <article class="rv-card" id="rev2" aria-label="Review by Tejas Gowda B R">
+            <div class="rv-stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+            <blockquote class="rv-text">"Very nice experience. Great taste and affordable prices. Best Iyengar bakery in Bashettihalli — highly recommended!"</blockquote>
+            <div class="rv-author">
+              <div class="rv-avatar" aria-hidden="true">T</div>
+              <div>
+                <strong class="rv-name">Tejas Gowda B R</strong>
+                <span class="rv-loc">Regular Customer · Bengaluru</span>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="review-card" id="rev3">
-            <div class="review-stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"Ordered a birthday cake and it was absolutely stunning. Everyone at the party loved it. Will definitely order again!"</p>
-            <div class="review-author">
-              <div class="author-avatar">P</div>
-              <div class="author-info">
-                <span class="author-name">Priya Sharma</span>
-                <span class="author-sub">Happy Customer • Bengaluru</span>
+          <article class="rv-card" id="rev3" aria-label="Review by Priya Sharma">
+            <div class="rv-stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+            <blockquote class="rv-text">"Ordered a birthday cake and it was absolutely stunning. Everyone at the party loved it. Will definitely order again!"</blockquote>
+            <div class="rv-author">
+              <div class="rv-avatar" aria-hidden="true">P</div>
+              <div>
+                <strong class="rv-name">Priya Sharma</strong>
+                <span class="rv-loc">Happy Customer · Bengaluru</span>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="review-card" id="rev4">
-            <div class="review-stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"Fresh, delicious, and always consistent quality. The khara buns and dil pasand here are simply the best in the area!"</p>
-            <div class="review-author">
-              <div class="author-avatar">R</div>
-              <div class="author-info">
-                <span class="author-name">Ravi Kumar</span>
-                <span class="author-sub">Daily Visitor • Bengaluru</span>
+          <article class="rv-card" id="rev4" aria-label="Review by Ravi Kumar">
+            <div class="rv-stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+            <blockquote class="rv-text">"Fresh, consistent quality every time. The khara buns and dil pasand here are simply the best in the area!"</blockquote>
+            <div class="rv-author">
+              <div class="rv-avatar" aria-hidden="true">R</div>
+              <div>
+                <strong class="rv-name">Ravi Kumar</strong>
+                <span class="rv-loc">Daily Visitor · Bengaluru</span>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="review-card" id="rev5">
-            <div class="review-stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"Amazing honey cake! The flavor is unique and it's so affordable. This place is a hidden gem in Bashettihalli. Love it!"</p>
-            <div class="review-author">
-              <div class="author-avatar">A</div>
-              <div class="author-info">
-                <span class="author-name">Ananya Reddy</span>
-                <span class="author-sub">Sweet Lover • Bengaluru</span>
+          <article class="rv-card" id="rev5" aria-label="Review by Ananya Reddy">
+            <div class="rv-stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+            <blockquote class="rv-text">"Amazing honey cake! The flavor is unique and so affordable. This place is a hidden gem in Bashettihalli. Love it!"</blockquote>
+            <div class="rv-author">
+              <div class="rv-avatar" aria-hidden="true">A</div>
+              <div>
+                <strong class="rv-name">Ananya Reddy</strong>
+                <span class="rv-loc">Sweet Lover · Bengaluru</span>
               </div>
             </div>
-          </div>
+          </article>
 
-        </div>
-        <div class="carousel-controls">
-          <button class="carousel-btn" id="prevBtn" aria-label="Previous review">&#8592;</button>
-          <div class="carousel-dots" id="carouselDots"></div>
-          <button class="carousel-btn" id="nextBtn" aria-label="Next review">&#8594;</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════ GALLERY SECTION ═══════════════════ -->
-  <section class="gallery" id="gallery">
-    <div class="section-container">
-      <div class="section-header reveal">
-        <span class="section-tag">Visual Delights</span>
-        <h2 class="section-title">Fresh From Our Bakery</h2>
-        <p class="section-subtitle">A glimpse into the freshness and care behind every bake.</p>
-      </div>
-      <div class="gallery-masonry">
-        <div class="gallery-item tall reveal" id="gal1">
-          <img src="gallery_cakes.png" alt="Celebration cakes" loading="lazy" />
-          <div class="gallery-overlay"><span>Celebration Cakes</span></div>
-        </div>
-        <div class="gallery-item reveal" id="gal2">
-          <img src="cake_chocolate.png" alt="Chocolate cake" loading="lazy" />
-          <div class="gallery-overlay"><span>Chocolate Cake</span></div>
-        </div>
-        <div class="gallery-item reveal" id="gal3">
-          <img src="veg_puff.png" alt="Veg puffs" loading="lazy" />
-          <div class="gallery-overlay"><span>Fresh Veg Puffs</span></div>
-        </div>
-        <div class="gallery-item tall reveal" id="gal4">
-          <img src="gallery_pastries.png" alt="Fresh pastries" loading="lazy" />
-          <div class="gallery-overlay"><span>Fresh Pastries</span></div>
-        </div>
-        <div class="gallery-item reveal" id="gal5">
-          <img src="cookies_assorted.png" alt="Cookies" loading="lazy" />
-          <div class="gallery-overlay"><span>Baked Cookies</span></div>
-        </div>
-        <div class="gallery-item reveal" id="gal6">
-          <img src="honey_cake.png" alt="Honey cake" loading="lazy" />
-          <div class="gallery-overlay"><span>Honey Cake</span></div>
-        </div>
-        <div class="gallery-item reveal" id="gal7">
-          <img src="cake_blackforest.png" alt="Black Forest Cake" loading="lazy" />
-          <div class="gallery-overlay"><span>Black Forest</span></div>
-        </div>
-        <div class="gallery-item reveal" id="gal8">
-          <img src="dil_pasand.png" alt="Dil Pasand" loading="lazy" />
-          <div class="gallery-overlay"><span>Dil Pasand</span></div>
+        </div><!-- /rv-track -->
+        <div class="rv-controls" role="group" aria-label="Review carousel controls">
+          <button class="rv-btn" id="rvPrev" aria-label="Previous review">&#8592;</button>
+          <div class="rv-dots" id="rvDots" role="tablist" aria-label="Review navigation dots"></div>
+          <button class="rv-btn" id="rvNext" aria-label="Next review">&#8594;</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════ CONTACT SECTION ═══════════════════ -->
-  <section class="contact" id="contact">
-    <div class="section-container">
-      <div class="section-header reveal">
-        <span class="section-tag">Find Us</span>
-        <h2 class="section-title">Visit Us Today</h2>
-        <p class="section-subtitle">Come experience the freshness firsthand — we'd love to see you!</p>
+  <!-- ══════════════ GALLERY ══════════════ -->
+  <section class="gallery" id="gallery" aria-label="Photo gallery">
+    <div class="wrap">
+      <header class="sec-header fade-up">
+        <span class="sec-tag">Visual Delights</span>
+        <h2 class="sec-title">Fresh From Our Bakery</h2>
+        <p class="sec-sub">A glimpse into the freshness and care behind every bake.</p>
+      </header>
+      <div class="gal-grid">
+        <div class="gal-item gal-tall fade-up" id="gal1">
+          <img src="gallery_cakes.png" alt="Celebration cakes display" loading="lazy" width="400" height="500" />
+          <div class="gal-overlay" aria-hidden="true"><span>Celebration Cakes</span></div>
+        </div>
+        <div class="gal-item fade-up" id="gal2">
+          <img src="cake_chocolate.png" alt="Chocolate cake" loading="lazy" width="400" height="250" />
+          <div class="gal-overlay" aria-hidden="true"><span>Chocolate Cake</span></div>
+        </div>
+        <div class="gal-item fade-up" id="gal3">
+          <img src="veg_puff.png" alt="Fresh veg puffs" loading="lazy" width="400" height="250" />
+          <div class="gal-overlay" aria-hidden="true"><span>Fresh Veg Puffs</span></div>
+        </div>
+        <div class="gal-item gal-tall fade-up" id="gal4">
+          <img src="gallery_pastries.png" alt="Fresh pastries" loading="lazy" width="400" height="500" />
+          <div class="gal-overlay" aria-hidden="true"><span>Fresh Pastries</span></div>
+        </div>
+        <div class="gal-item fade-up" id="gal5">
+          <img src="cookies_assorted.png" alt="Assorted cookies" loading="lazy" width="400" height="250" />
+          <div class="gal-overlay" aria-hidden="true"><span>Baked Cookies</span></div>
+        </div>
+        <div class="gal-item fade-up" id="gal6">
+          <img src="honey_cake.png" alt="Honey cake" loading="lazy" width="400" height="250" />
+          <div class="gal-overlay" aria-hidden="true"><span>Honey Cake</span></div>
+        </div>
+        <div class="gal-item fade-up" id="gal7">
+          <img src="cake_blackforest.png" alt="Black Forest cake" loading="lazy" width="400" height="250" />
+          <div class="gal-overlay" aria-hidden="true"><span>Black Forest</span></div>
+        </div>
+        <div class="gal-item fade-up" id="gal8">
+          <img src="dil_pasand.png" alt="Dil Pasand pastry" loading="lazy" width="400" height="250" />
+          <div class="gal-overlay" aria-hidden="true"><span>Dil Pasand</span></div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="contact" id="contact" aria-label="Contact and location">
+    <div class="wrap">
+      <header class="sec-header fade-up">
+        <span class="sec-tag">Find Us</span>
+        <h2 class="sec-title">Visit Us Today</h2>
+        <p class="sec-sub">Come taste the freshness — one tap to reach us!</p>
+      </header>
       <div class="contact-grid">
-        <div class="contact-card reveal" id="contactCard">
+
+        <!-- Info Card -->
+        <div class="contact-card fade-up" id="contactCard">
           <h3 class="contact-card-title">Get in Touch</h3>
-          <div class="contact-item" id="contactLocation">
-            <div class="contact-icon">📍</div>
+
+          <div class="contact-row" id="contactLocation">
+            <div class="contact-ico" aria-hidden="true">📍</div>
             <div class="contact-detail">
-              <span class="contact-label">Our Location</span>
-              <span class="contact-value">Bashettihalli, Bengaluru,<br />Karnataka – 562163</span>
+              <span class="contact-lbl">Location</span>
+              <span class="contact-val">Bashettihalli, Bengaluru<br />Karnataka – 562163</span>
             </div>
           </div>
-          <div class="contact-item" id="contactPhone">
-            <div class="contact-icon">📞</div>
+
+          <div class="contact-row" id="contactPhone">
+            <div class="contact-ico" aria-hidden="true">📞</div>
             <div class="contact-detail">
-              <span class="contact-label">Call / WhatsApp</span>
-              <a href="tel:+917899307440" class="contact-value contact-link">+91 78993 07440</a>
+              <span class="contact-lbl">Phone / WhatsApp</span>
+              <a href="tel:+917899307440" class="contact-val contact-link">+91 78993 07440</a>
             </div>
           </div>
-          <div class="contact-item" id="contactRating">
-            <div class="contact-icon">⭐</div>
+
+          <div class="contact-row" id="contactRating">
+            <div class="contact-ico" aria-hidden="true">⭐</div>
             <div class="contact-detail">
-              <span class="contact-label">Customer Rating</span>
-              <span class="contact-value">4.8 / 5 — Loved by our community</span>
+              <span class="contact-lbl">Rating</span>
+              <span class="contact-val">4.8 / 5 — Loved by the community</span>
             </div>
           </div>
-          <div class="contact-item" id="contactHours">
-            <div class="contact-icon">🕐</div>
+
+          <div class="contact-row" id="contactHours">
+            <div class="contact-ico" aria-hidden="true">🕐</div>
             <div class="contact-detail">
-              <span class="contact-label">Bakery Hours</span>
-              <span class="contact-value">Every Day — Fresh from Morning!</span>
+              <span class="contact-lbl">Hours</span>
+              <span class="contact-val">Open Every Day — Fresh from Morning!</span>
             </div>
           </div>
-          <div class="contact-cta">
-            <p class="contact-cta-text">Visit Us Today and Taste the Difference!</p>
-            <a href="tel:+917899307440" class="btn btn-primary" id="contactCallNow" style="width:100%; justify-content: center;">
-              <span>📞</span> Call Now
+
+          <!-- One-tap action buttons -->
+          <div class="contact-actions">
+            <a href="tel:+917899307440" class="ctap-btn ctap-call" id="contactCallNow" aria-label="Call us now">
+              <span aria-hidden="true">📞</span> Call Now
             </a>
-            <a href="https://wa.me/917899307440?text=Hello!%20I%20would%20like%20to%20order%20from%20Kushal%20Iyengar's%20Cake%20Mane" target="_blank" class="btn btn-whatsapp" id="contactWhatsApp">
-              <span>💬</span> WhatsApp Us
+            <a href="https://wa.me/917899307440?text=Hello!%20I%20would%20like%20to%20order%20from%20Kushal%20Iyengar's%20Cake%20Mane" target="_blank" rel="noopener noreferrer" class="ctap-btn ctap-wa" id="contactWhatsApp" aria-label="Message us on WhatsApp">
+              <span aria-hidden="true">💬</span> WhatsApp
+            </a>
+            <a href="https://maps.google.com/?q=Bashettihalli,Bengaluru,Karnataka+562163" target="_blank" rel="noopener noreferrer" class="ctap-btn ctap-map" id="contactDirections" aria-label="Get directions on Google Maps">
+              <span aria-hidden="true">📍</span> Directions
             </a>
           </div>
         </div>
-        <div class="map-wrap reveal" id="mapWrap">
-          <div class="map-header">
-            <span class="map-icon">🗺️</span>
+
+        <!-- Map -->
+        <div class="map-card fade-up" id="mapWrap">
+          <div class="map-hdr">
+            <span aria-hidden="true">🗺️</span>
             <div>
               <span class="map-title">Kushal Iyengar's Cake Mane</span>
-              <span class="map-address">Bashettihalli, Bengaluru, Karnataka 562163</span>
+              <span class="map-addr">Bashettihalli, Bengaluru, Karnataka 562163</span>
             </div>
           </div>
-          <div class="map-embed">
+          <div class="map-frame">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.123456789!2d77.4321!3d13.1234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d000000000%3A0x1234567890abcdef!2sBashettihalli%2C%20Bengaluru%2C%20Karnataka%20562163!5e0!3m2!1sen!2sin!4v1718000000000!5m2!1sen!2sin"
               width="100%"
-              height="320"
-              style="border:0; border-radius: 16px;"
+              height="280"
+              style="border:0;border-radius:14px;display:block;"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              title="Kushal Iyengar's Cake Mane location map"
+              title="Kushal Iyengar's Cake Mane — Google Maps location"
             ></iframe>
           </div>
-          <a href="https://maps.google.com/?q=Bashettihalli,Bengaluru,Karnataka+562163" target="_blank" class="map-directions" id="getDirectionsBtn">
-            📍 Get Directions on Google Maps
+          <a href="https://maps.google.com/?q=Bashettihalli,Bengaluru,Karnataka+562163" target="_blank" rel="noopener noreferrer" class="map-dir-link" id="getDirectionsBtn" aria-label="Open Google Maps for directions">
+            📍 Open in Google Maps
           </a>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════ FOOTER ═══════════════════ -->
-  <footer class="footer">
-    <div class="footer-container">
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer-inner">
       <div class="footer-brand">
         <div class="footer-logo">
-          <span class="logo-icon">🎂</span>
-          <div class="logo-text">
-            <span class="logo-main">Kushal Iyengar's</span>
-            <span class="logo-sub">Cake Mane</span>
+          <span aria-hidden="true">🎂</span>
+          <div>
+            <span class="f-logo-name">Kushal Iyengar's</span>
+            <span class="f-logo-sub">Cake Mane</span>
           </div>
         </div>
-        <p class="footer-tagline">Freshly Baked Every Day • Authentic Taste • Budget Friendly</p>
-        <div class="footer-social">
-          <a href="https://wa.me/917899307440" target="_blank" class="social-btn" id="footerWhatsapp" aria-label="WhatsApp">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <p class="f-tagline">Freshly Baked Every Day · Authentic Taste · Budget Friendly</p>
+        <div class="f-social">
+          <a href="https://wa.me/917899307440" target="_blank" rel="noopener noreferrer" class="f-social-btn" id="footerWA" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           </a>
-          <a href="tel:+917899307440" class="social-btn" id="footerPhone" aria-label="Call Us">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <a href="tel:+917899307440" class="f-social-btn" id="footerPhone" aria-label="Call us">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
           </a>
-          <a href="https://maps.google.com/?q=Bashettihalli,Bengaluru,Karnataka+562163" target="_blank" class="social-btn" id="footerMap" aria-label="Find on Map">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <a href="https://maps.google.com/?q=Bashettihalli,Bengaluru,Karnataka+562163" target="_blank" rel="noopener noreferrer" class="f-social-btn" id="footerMap" aria-label="Find on map">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           </a>
         </div>
       </div>
-      <div class="footer-links">
-        <h4 class="footer-heading">Quick Links</h4>
-        <ul class="footer-nav">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#bestsellers">Our Menu</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="f-links-col">
+        <h4 class="f-col-title">Quick Links</h4>
+        <nav aria-label="Footer navigation">
+          <a href="#home" class="f-link">Home</a>
+          <a href="#features" class="f-link">Why Us</a>
+          <a href="#bestsellers" class="f-link">Our Menu</a>
+          <a href="#about" class="f-link">About</a>
+          <a href="#reviews" class="f-link">Reviews</a>
+          <a href="#gallery" class="f-link">Gallery</a>
+          <a href="#contact" class="f-link">Contact</a>
+        </nav>
       </div>
-      <div class="footer-contact-info">
-        <h4 class="footer-heading">Contact</h4>
-        <div class="footer-contact-item">
-          <span>📍</span>
-          <span>Bashettihalli, Bengaluru,<br/>Karnataka – 562163</span>
-        </div>
-        <div class="footer-contact-item">
-          <span>📞</span>
-          <a href="tel:+917899307440">+91 78993 07440</a>
-        </div>
-        <div class="footer-contact-item">
-          <span>⭐</span>
-          <span>Rated 4.8/5 by Happy Customers</span>
-        </div>
-        <div class="footer-contact-item">
-          <span>🕐</span>
-          <span>Open Daily — Fresh Every Morning!</span>
-        </div>
+      <div class="f-contact-col">
+        <h4 class="f-col-title">Contact</h4>
+        <div class="f-contact-row"><span aria-hidden="true">📍</span><span>Bashettihalli, Bengaluru, KA – 562163</span></div>
+        <div class="f-contact-row"><span aria-hidden="true">📞</span><a href="tel:+917899307440">+91 78993 07440</a></div>
+        <div class="f-contact-row"><span aria-hidden="true">⭐</span><span>Rated 4.8/5 by Happy Customers</span></div>
+        <div class="f-contact-row"><span aria-hidden="true">🕐</span><span>Open Daily — Fresh from Morning!</span></div>
       </div>
     </div>
+    <!-- Extra padding so bottom bar doesn't cover footer -->
     <div class="footer-bottom">
-      <p>© 2025 Kushal Iyengar's Cake Mane. All Rights Reserved. Made with ❤️ in Bengaluru.</p>
+      <p>© 2025 Kushal Iyengar's Cake Mane · All Rights Reserved · Made with ❤️ in Bengaluru</p>
     </div>
   </footer>
 
-  <!-- ═══════════════════ FLOATING WHATSAPP BUTTON ═══════════════════ -->
-  <a href="https://wa.me/917899307440?text=Hello!%20I%20would%20like%20to%20order%20from%20Kushal%20Iyengar's%20Cake%20Mane" 
-     target="_blank" 
-     class="whatsapp-float" 
-     id="whatsappFloat"
-     aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24" fill="white" width="28" height="28">
+  <!-- ══════════════ FLOATING WHATSAPP ══════════════ -->
+  <a
+    href="https://wa.me/917899307440?text=Hello!%20I%20would%20like%20to%20order%20from%20Kushal%20Iyengar's%20Cake%20Mane"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="fab-wa"
+    id="fabWA"
+    aria-label="Chat on WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" fill="white" width="26" height="26" aria-hidden="true">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
     </svg>
-    <span class="whatsapp-tooltip">Chat with us!</span>
   </a>
+
+  <!-- ══════════════ STICKY BOTTOM ACTION BAR ══════════════ -->
+  <nav class="bottom-bar" id="bottomBar" aria-label="Quick action bar">
+    <a href="tel:+917899307440" class="bb-btn bb-call" id="bbCall" aria-label="Call us">
+      <span class="bb-icon" aria-hidden="true">📞</span>
+      <span class="bb-lbl">Call</span>
+    </a>
+    <a href="https://wa.me/917899307440?text=Hello!%20I%20would%20like%20to%20order%20from%20Kushal%20Iyengar's%20Cake%20Mane" target="_blank" rel="noopener noreferrer" class="bb-btn bb-wa" id="bbWhatsapp" aria-label="WhatsApp us">
+      <span class="bb-icon" aria-hidden="true">💬</span>
+      <span class="bb-lbl">WhatsApp</span>
+    </a>
+    <a href="https://maps.google.com/?q=Bashettihalli,Bengaluru,Karnataka+562163" target="_blank" rel="noopener noreferrer" class="bb-btn bb-map" id="bbDirections" aria-label="Get directions">
+      <span class="bb-icon" aria-hidden="true">📍</span>
+      <span class="bb-lbl">Directions</span>
+    </a>
+    <a href="tel:+917899307440" class="bb-btn bb-order" id="bbOrder" aria-label="Order now">
+      <span class="bb-icon" aria-hidden="true">🍰</span>
+      <span class="bb-lbl">Order</span>
+    </a>
+  </nav>
 
   <script src="script.js"></script>
 </body>
